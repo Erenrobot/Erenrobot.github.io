@@ -1,22 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Welcome to my page</title>
-	<style>
-		body {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-			margin: 0;
-			padding: 0;
-			font-size: 3em;
-			font-family: Arial, sans-serif;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            background-color: #007BFF; /* This is a shade of blue. Adjust to your preference. */
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .projects img {
+            max-width: 100%;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-	<h1>Welcome to my page</h1>
+    <div class="content">
+        <div class="profile">
+            <img src="path_to_your_photo.jpg" alt="Your Photo">
+            <p>Text about you</p>
+        </div>
+
+        <div class="projects">
+            <div>
+                <img src="path_to_project1_photo.jpg" alt="Project 1 Photo">
+                <p>Text about project 1</p>
+            </div>
+            <div>
+                <img src="path_to_project2_photo.jpg" alt="Project 2 Photo">
+                <p>Text about project 2</p>
+            </div>
+            <div>
+                <img src="path_to_project3_photo.jpg" alt="Project 3 Photo">
+                <p>Text about project 3</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="your_twitter_link" target="_blank">Twitter</a>
+            <a href="your_linkedin_link" target="_blank">LinkedIn</a>
+        </div>
+    </div>
 </body>
 </html>
