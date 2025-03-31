@@ -1,59 +1,263 @@
-<section class="section" id="projects">
-  <h2>My Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eren Sadikoglu - Portfolio</title>
+  <style>
+    :root {
+      --primary: #0d3b66;
+      --accent: #faa916;
+      --bg-light: #f9f9f9;
+      --bg-dark: #14213d;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+    }
 
-  <div class="project">
-    <img src="/path/to/lang-nav-robot.jpg" alt="Language-Based Robot Navigation">
-    <div>
-      <h3>Language-Based Robot Navigation (2024)</h3>
-      <p>Designed and built a humanoid robot that receives multi-language human orders via S2T and performs tasks using LLMs. Integrated 2D Lidar and 3D stereo camera for autonomous navigation and environment analysis.</p>
-    </div>
-  </div>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+    header {
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--bg-dark);
+    }
+    nav a {
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: var(--accent);
+      color: var(--text-dark);
+    }
+    .section {
+      padding: 30px 20px;
+    }
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .intro img {
+      width: 150px;
+      border-radius: 10px;
+    }
+    .project, .experience-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+    .project img, .experience-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: var(--primary);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
 
-  <div class="project">
-    <img src="/path/to/llm-navigation.jpg" alt="LLM with Robot Navigation">
-    <div>
-      <h3>LLM with Robot Navigation (2023)</h3>
-      <p>Developed a robot voice control system using GPT-4 at TÜBİTAK BİLGEM. Served as the final project of the internship program.</p>
-    </div>
-  </div>
+  <!-- HEADER -->
+  <header>
+    <h1>Photo of One of My Projects</h1>
+  </header>
 
-  <div class="project">
-    <img src="/path/to/dental-ai.jpg" alt="Dental Filling Quality Detection">
-    <div>
-      <h3>Detection of Dental Filling Quality (2022–2023)</h3>
-      <p>Created an AI tool for detecting dental fillings using X-ray images with a 0.7 mAP50 rate in the Medipol EndoAI group.</p>
-    </div>
-  </div>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#whoami">Who am I</a>
+    <a href="#projects">My Projects</a>
+    <a href="#experience">My Experience</a>
+    <a href="#research">My Research</a>
+  </nav>
 
-  <div class="project">
-    <img src="/path/to/map-merging.jpg" alt="TÜBİTAK Map Merging">
+  <!-- WHO AM I SECTION -->
+  <section class="section intro" id="whoami">
+    <img src="/path/to/profile.jpg" alt="Eren Sadikoglu" />
     <div>
-      <h3>Map Merging in Multiple Robots (2021–2022)</h3>
-      <p>Worked on a swarm robotics project to merge maps from several robots. Received funding from TÜBİTAK 2209A.</p>
+      <h2>Eren Sadikoglu</h2>
+      <p>MS Student in Robotics and Autonomous Systems (System Engineering), Arizona State University</p>
+      <p>Location: Tempe, AZ</p>
+      <p>Email: <a href="mailto:erensadikoglu@hotmail.com">erensadikoglu@hotmail.com</a></p>
+      <p>Phone: <a href="tel:+16028073367">+1 (602)-807-3367</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/eren-sadikoglu/">LinkedIn</a> |
+        <a href="https://github.com/Erenrobot">GitHub</a> |
+        <a href="https://github.com/Erenrobot">Google Scholar</a> |
+        <a href="https://erenrobot.github.io/">Portfolio</a> |
+        <a href="https://www.youtube.com/@AIwithEren2023">YouTube</a>
+      </p>
+      <h3>Summary</h3>
+      <p>
+        A passionate and dedicated professional with extensive experience in Deep Learning, Computer Vision,
+        and Robotics. I specialize in designing cutting-edge algorithms that bridge the gap between
+        computational intelligence and real-world robotic applications.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div class="project">
-    <img src="/path/to/agriculture-drone.jpg" alt="Agriculture Drone">
-    <div>
-      <h3>Agriculture Drone (2020–2021)</h3>
-      <p>Built an agricultural UAV integrating Faster RCNN and YOLOv4 for harvest prediction and crop disease detection.</p>
-    </div>
-  </div>
+  <!-- MY PROJECTS SECTION -->
+  <section class="section" id="projects">
+    <h2>My Projects</h2>
 
-  <div class="project">
-    <img src="/path/to/slam-ugv.jpg" alt="SLAM UGV">
-    <div>
-      <h3>SLAM Unmanned Ground Vehicle (2019–2021)</h3>
-      <p>Developed a ground vehicle capable of SLAM, in collaboration with the Medipol Robotics and Perception group.</p>
+    <div class="project">
+      <img src="/path/to/lang-nav-robot.jpg" alt="Language-Based Robot Navigation" />
+      <div>
+        <h3>Language-Based Robot Navigation (2024)</h3>
+        <p>
+          Designed and built a humanoid robot that receives multi-language human orders via S2T and performs tasks
+          using LLMs. Integrated 2D Lidar and 3D stereo camera for autonomous navigation and environment analysis.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="project">
-    <img src="/path/to/vio-drone.jpg" alt="VIO Drone">
-    <div>
-      <h3>VIO Drone (2019–2020)</h3>
-      <p>Conducted Visual Inertial Odometry flights in GPS-denied environments with Medipol Robotics and Perception group.</p>
+    <div class="project">
+      <img src="/path/to/llm-navigation.jpg" alt="LLM with Robot Navigation" />
+      <div>
+        <h3>LLM with Robot Navigation (2023)</h3>
+        <p>
+          Developed a robot voice control system using GPT-4 at TÜBİTAK BİLGEM. Served as the final project
+          of the internship program.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+
+    <div class="project">
+      <img src="/path/to/dental-ai.jpg" alt="Dental Filling Quality Detection" />
+      <div>
+        <h3>Detection of Dental Filling Quality (2022–2023)</h3>
+        <p>
+          Created an AI tool for detecting dental fillings using X-ray images with a 0.7 mAP50 rate in the
+          Medipol EndoAI group.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="/path/to/map-merging.jpg" alt="TÜBİTAK Map Merging" />
+      <div>
+        <h3>Map Merging in Multiple Robots (2021–2022)</h3>
+        <p>
+          Worked on a swarm robotics project to merge maps from several robots. Received funding from TÜBİTAK 2209A.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="/path/to/agriculture-drone.jpg" alt="Agriculture Drone" />
+      <div>
+        <h3>Agriculture Drone (2020–2021)</h3>
+        <p>
+          Built an agricultural UAV integrating Faster RCNN and YOLOv4 for harvest prediction and crop disease detection.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="/path/to/slam-ugv.jpg" alt="SLAM UGV" />
+      <div>
+        <h3>SLAM Unmanned Ground Vehicle (2019–2021)</h3>
+        <p>
+          Developed a ground vehicle capable of SLAM, in collaboration with the Medipol Robotics and Perception group.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="/path/to/vio-drone.jpg" alt="VIO Drone" />
+      <div>
+        <h3>VIO Drone (2019–2020)</h3>
+        <p>
+          Conducted Visual Inertial Odometry flights in GPS-denied environments with Medipol Robotics and Perception group.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY EXPERIENCE SECTION -->
+  <section class="section" id="experience">
+    <h2>My Experience</h2>
+    <div class="experience-item">
+      <img src="/path/to/baykar-logo.png" alt="Baykar Logo" />
+      <div>
+        <h3>Baykar Makina</h3>
+        <p><strong>High School Intern in Software Department</strong> | Jan 2018 – Aug 2018</p>
+        <p>Worked on embedded systems for UAVs during an internship invited by Selçuk Bayraktar.</p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="/path/to/ieee-logo.png" alt="IEEE Logo" />
+      <div>
+        <h3>IEEE Medipol Student Branch</h3>
+        <p><strong>Chairman</strong> | Sep 2022 – Present</p>
+        <p>Led engineering-focused student branch; organized technical and social events.</p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="/path/to/tubitak-logo.png" alt="TÜBİTAK Logo" />
+      <div>
+        <h3>TÜBİTAK</h3>
+        <p><strong>Intern Researcher</strong></p>
+        <p>STAR Program (Feb 2021 – Aug 2021): Object detection & deep learning.<br>
+          Robotics Dept. BİLGEM (Jul 2023 – Aug 2023): Sequential model-based robots.
+        </p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="/path/to/t3vakfi-logo.png" alt="T3 Vakfı Logo" />
+      <div>
+        <h3>Türkiye Technology Team Foundation</h3>
+        <p><strong>Volunteer Scholar</strong> | Feb 2021 – Nov 2022</p>
+        <p>Served in Teknofest departments and won Rising Star Scholarship.</p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="/path/to/irtifa-logo.png" alt="İrtifa Logo" />
+      <div>
+        <h3>İrtifa Team</h3>
+        <p><strong>Team Leader</strong> | Nov 2019 – Aug 2020</p>
+        <p>Led UAV team for TÜBİTAK competition, focused on embedded systems and image processing.</p>
+      </div>
+    </div>
+    <div class="experience-item">
+      <img src="/path/to/medipol-logo.png" alt="Medipol Logo" />
+      <div>
+        <h3>Medipol Autonomous Vehicles</h3>
+        <p><strong>Team Leader</strong> | Aug 2020 – Apr 2022</p>
+        <p>Finalist at 2021 Teknofest UAV competition. Worked on autonomous UAVs using deep learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>Contact me at <a href="mailto:erensadikoglu@hotmail.com">erensadikoglu@hotmail.com</a></p>
+  </footer>
+
+</body>
+</html>
